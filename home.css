@@ -1,0 +1,229 @@
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Teko", sans-serif;
+  }
+  
+header {
+    text-align: center;
+    height: 200px;
+    background-image: url(https://images.pexels.com/photos/5277392/pexels-photo-5277392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: 100%;
+    background-position: 0%;
+    
+}
+
+#posts div{
+  border: 2px solid #ffffff;
+  
+  padding: 10px;
+  
+}
+
+
+
+#posts{
+  width: 400px;
+  margin: 0;
+ 
+}
+
+
+
+#comment-view{
+  display:flex;
+  flex-direction: column;
+  position: absolute;
+  top: 220px;
+  right: 400px;
+  height: 100%;
+  border-left:1px solid #ffffff;
+  padding: 0 30px;
+}
+
+
+#bible-view p{
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+#comment{
+  height: 90px;
+  width: 400px;
+  max-width: 100%;
+  word-break: break-word;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+
+
+.main-left{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 400px;
+  margin-top: 10px;
+}
+
+
+
+#bible-view{
+  width:100%;
+}
+
+
+  
+#logo img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 150px;
+    height: 100px;
+}
+
+
+  header h1{
+    position: relative;
+    top: -30px;
+    z-index: 1;
+    font-size: 3em;
+    text-transform: none;
+    text-align: center;
+    margin: 20px, 20px;
+  }
+
+  header p{
+    position: relative;
+    top: -55px;
+    font-size: large;
+  }
+  
+  
+  .footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .footer-col{
+    padding: 0 35px;
+    height: 100%;
+  }
+
+  footer h1{
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  
+  .footer-col strong{
+    display: flex;
+    color: #919496;
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  
+  .footer-col p{
+    font-size: 18px;
+    padding: 3px 0 15px;
+    margin: 0;
+  }
+
+  footer nav{
+    width: 80%;
+    margin: 0;
+  }
+  
+  
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  #separator {
+    width: 2px;
+    height: 20px;
+    background-color: #ffffff;
+    margin: 0 10px;
+  }
+  
+  .button {
+    background-color: #333333;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  #search {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+
+  
+  .searchBar {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  footer {
+      background-color:black;
+      color:white;
+      text-align: justify;
+      font-size: 10px;
+      text-transform: none;
+      height: 30px;
+      padding: 50px 0 20px;
+    
+  }
+  
+  @media screen and (max-width: 768px) {
+    #links {
+      display: none;
+    }
+  
+  
+  
+    #links.open {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      padding: 20px;
+      transition: all 0.3s ease;
+      z-index: 999;
+    }
+    
+    #links a {
+      color: #ffffff;
+      margin-bottom: 10px;
+      transition: background-color 0.3s ease;
+    }
+  
+    #links a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+  
+
+
